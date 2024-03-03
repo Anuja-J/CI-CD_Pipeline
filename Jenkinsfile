@@ -1,3 +1,4 @@
+#!/usr/bin/env
 pipeline {
     agent any
     tools {

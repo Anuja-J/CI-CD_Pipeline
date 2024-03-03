@@ -1,5 +1,3 @@
-Pipeline Script:
-
 pipeline {
     agent any
     tools {

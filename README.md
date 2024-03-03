@@ -50,6 +50,7 @@ c. Scan with SonarQube: SonarQube scanner will scan the code and send the report
 d. Build Docker Image: Docker will build the Docker image. If the Docker build fails, the pipeline will fail, and Jenkins will notify the user.<br>
 e. Scan Docker Image with Trivy: Trivy will scan the Docker image for vulnerabilities. If any vulnerabilities are found, the pipeline will fail, and the report will be sent to Jenkins.<br>
 f. Deploy to Kubernetes: Jenkins will create deployment and service in Minikube. If Jenkins fails to create deployment and service in Kubernetes, the pipeline will fail, and Jenkins will notify the user.<br>
+
 Refer for Pipeline Script: https://github.com/Anuja-J/CI-CD_Pipeline/blob/main/script.txt <br>
 
 4. __Test the Pipeline:__

@@ -32,9 +32,6 @@ Range of tools were utilized including Git, GitHub, Jenkins, Maven, SonarQube, D
 5. Trivy will scan the docker image, if it finds any Vulnerability then the whole pipeline will become a failure, and the generated report will be sent to Jenkins.<br>
 6. After the docker push, Jenkins will create deployment and service in minikube and our application will be deployed into Kubernetes. if Jenkins fails to create deployment and service in Kubernetes, the whole pipeline will become a failure and Jenkins will notify the user that your build fails.<br>
 
-Refer for Pipeline Script: https://github.com/Anuja-J/CI-CD_Pipeline/blob/main/script.txt
-
-
 ## Project Implementation
 
 1. __Set Up Jenkins and Required Plugins:__
@@ -53,6 +50,8 @@ c. Scan with SonarQube: SonarQube scanner will scan the code and send the report
 d. Build Docker Image: Docker will build the Docker image. If the Docker build fails, the pipeline will fail, and Jenkins will notify the user.<br>
 e. Scan Docker Image with Trivy: Trivy will scan the Docker image for vulnerabilities. If any vulnerabilities are found, the pipeline will fail, and the report will be sent to Jenkins.<br>
 f. Deploy to Kubernetes: Jenkins will create deployment and service in Minikube. If Jenkins fails to create deployment and service in Kubernetes, the pipeline will fail, and Jenkins will notify the user.<br>
+
+Refer for Pipeline Script: https://github.com/Anuja-J/CI-CD_Pipeline/blob/main/script.txt <br>
 
 4. __Test the Pipeline:__
 Test the pipeline with sample code changes to ensure all stages work as expected.<br>
